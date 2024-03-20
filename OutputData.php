@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Output Data</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,32 +30,31 @@
         }
     ?>
 
-        <!-- <label for="exampleFormControlTextarea1" class="form-label">Foto</label> -->
         <div class="output-foto">
         <img src="images/<?php echo $file; ?>" alt="Gambar">
         </div>
 
-        <label for="exampleFormControlTextarea1" class="form-label">Nama</label>
+        <label class="form-label">Nama Lengkap</label>
         <div class="output">
             <?php echo $nama; ?>
         </div>
 
-        <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
-        <div class="output">
-            <?php echo $alamat; ?>
-        </div>
-
-        <label for="exampleInputEmail1" class="form-label">Jenis Kelamin</label>
+        <label class="form-label">Jenis Kelamin</label>
         <div class="output">
             <?php echo $gender; ?>
         </div>
 
-        <label for="exampleInputEmail1" class="form-label">Tanggal Lahir</label>
+        <label class="form-label">Tanggal Lahir</label>
         <div class="output">
             <?php echo $tgl_lahir; ?>
         </div>
 
-        <label for="exampleInputEmail1" class="form-label">Motivasi</label>
+        <label class="form-label">Alamat</label>
+        <div class="output">
+            <?php echo $alamat; ?>
+        </div>
+
+        <label class="form-label">Motivasi</label>
         <div class="output">
             <?php echo $motivasi; ?>
         </div>
