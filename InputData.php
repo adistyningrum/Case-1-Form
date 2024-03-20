@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Input Data</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,35 +12,29 @@
   </head>
 
   <body>
-    
+
     <?php include('header.php'); ?>
+    
     <h1>Masukkan Biodata</h1>
     <form method="post" action="OutputData.php" enctype="multipart/form-data">
    
         <div class="container">
-            <!-- NAM -->
             <!-- UNGGAH FOTO -->
             <div class="login-group2302">
                 <img src="asset/user2.png" alt="Ellipse18145"/>
-                
             </div>
 
             <div class="unggah">
-                    <label for="exampleInputEmail1" class="form-label">Unggah Foto</label><br>
+                <label class="form-label">Unggah Foto</label><br>
                 <label for="file-upload" class="unggah"></label>
                 <input input type="file" name="file">
             </div>
             
             <!-- NAMA -->
             <div class="mb-3">
-                <label class="form-label">Nama</label>
+                <label class="form-label">Nama Lengkap</label>
                 <input class="form-control" type="text" name="nama" aria-label="default input example">
 
-            </div>
-            <!-- ALAMAT -->
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="alamat"></textarea>
             </div>
 
             <!-- JENIS KELAMIN -->
@@ -57,14 +51,19 @@
                     
             <!-- TANGGAL LAHIR -->
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Tanggal Lahir</label>
+                    <label class="form-label">Tanggal Lahir</label>
                     <input type="date" name="date" class="form-control" id="date">
                 </div>
-                </form>
+
+                <!-- ALAMAT -->
+            <div class="mb-3">
+                <label class="form-label">Alamat</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="alamat"></textarea>
+            </div>
 
             <!-- MOTIVASI -->
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Motivasi</label>
+                <label class="form-label">Motivasi</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="motivasi"></textarea>
             </div>
 
