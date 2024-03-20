@@ -31,4 +31,5 @@
         <h3 class="copyright">Copyright Kelompok 9</h3>
     </nav>
 </footer>
+</body>
 </html>
